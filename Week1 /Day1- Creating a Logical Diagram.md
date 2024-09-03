@@ -2,7 +2,6 @@
 ## Diagram
 In this project, [Logical Diagram](https://github.com/shellwiz1337/SOC-Analyst-Challenge/blob/9f2db86eb2b02adbaa9d6253427f797107b5192b/images/setup_diagram.drawio(1).png) illustrates the architecture of a secure, monitored environment hosted on VULTR's cloud platform. The setup includes several servers and components that work together to ensure network security and manage potential threats.
 Core Components:
-
     Private Network on VULTR:
         This network has a specific IP range (172.31.0.0/24) and includes all the essential servers, ensuring they communicate within a secure, isolated environment.
 
