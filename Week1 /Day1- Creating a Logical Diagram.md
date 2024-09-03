@@ -1,6 +1,6 @@
 
 ## Diagram
-![Logical Diagram](images/setup_diagram.drawio(1)).png)
+[Logical Diagram](images/setup_diagram.drawio(1).png)
 In this project, the logical diagram illustrates the architecture of a secure, monitored environment hosted on VULTR's cloud platform. The setup includes several servers and components that work together to ensure network security and manage potential threats.
 Core Components:
 
