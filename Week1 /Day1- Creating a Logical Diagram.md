@@ -1,7 +1,7 @@
 
 ## Diagram
 [Logical Diagram](https://github.com/shellwiz1337/SOC-Analyst-Challenge/blob/9f2db86eb2b02adbaa9d6253427f797107b5192b/images/setup_diagram.drawio(1).png)
-In this project, the logical diagram illustrates the architecture of a secure, monitored environment hosted on VULTR's cloud platform. The setup includes several servers and components that work together to ensure network security and manage potential threats.
+In this project, [Logical Diagram](https://github.com/shellwiz1337/SOC-Analyst-Challenge/blob/9f2db86eb2b02adbaa9d6253427f797107b5192b/images/setup_diagram.drawio(1).png) illustrates the architecture of a secure, monitored environment hosted on VULTR's cloud platform. The setup includes several servers and components that work together to ensure network security and manage potential threats.
 Core Components:
 
     Private Network on VULTR:
