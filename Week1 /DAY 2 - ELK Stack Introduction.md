@@ -11,8 +11,11 @@ Elk stack gives the ability to aggregate logs from all of our system and applica
 Comparing ELK stack to Splunk have these similarities :
 
 Elasticsearch = Indexer/ Search Head 
+
 Logstash = Heavy Forwarder
+
 Kibana = Web GUI
+
 Beats/Agents = Universal Forwarders
 
 
