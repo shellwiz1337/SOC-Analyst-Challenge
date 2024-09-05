@@ -7,6 +7,8 @@ Navigate to the Vultr dashboard and select VPC 2.0 under the network options.
 Choose a network location, ensuring it matches the location of the virtual machine you will deploy later. For this example, I chose New York (NY).
 Configure the IP range for the VPC. In my setup, I used the 172.31.0.0/24 IP range.
 Assign a network name for your VPC.
+
+
 Step 2: Deploy the Server
 In the same location as your VPC (New York), deploy a new virtual machine with the following specifications:
 Operating System: Ubuntu 22.04 LTS (x64)
@@ -15,43 +17,44 @@ vCPUs: 4
 Memory: 16GB
 Bandwidth: 6TB
 After deployment, access the server using SSH with PowerShell instead of the Vultr console. You will need the public IPv4 address, root account, and password provided.
+
+
 Step 3: Update Repositories and Install Elasticsearch
 First, update the server's package repositories:
 
-sudo apt-get update && sudo apt-get upgrade -y
-
+`sudo apt-get update && sudo apt-get upgrade -y`
 
 Download and install Elasticsearch:
 
 Visit the official Elasticsearch Downloads Page and select Deb x86_64.
-
 Copy the download link and use wget to download it:
-
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.0-amd64.deb
-
-
+`wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.0-amd64.deb`
 Install the package using dpkg:
-sudo dpkg -i elasticsearch-8.15.0-amd64.deb
+`sudo dpkg -i elasticsearch-8.15.0-amd64.deb`
 
 Take note of the superuser password provided during installation, as you'll need it later.
 
 
+
 Step 4: Configure Elasticsearch
 Open the elasticsearch.yml configuration file:
-
-sudo nano /etc/elasticsearch/elasticsearch.yml
-
+`sudo nano /etc/elasticsearch/elasticsearch.yml`
 Modify the following settings:
 
-network.host: Assign your server’s public IP address to this field.
-http.port: No need to change the default port (9200), just uncomment it.
+`network.host: Assign your server’s public IP address to this field.`
+`http.port: No need to change the default port (9200), just uncomment it.`
+
 This allows access to Elasticsearch from your Security Operations Center (SOC) analyst’s machine.
+
 
 Step 5: Configure the Firewall
 To secure the server, create firewall rules that only allow access to your IP address and only expose port 22 (SSH).
-
 Block all other ports and restrict access to Elasticsearch from the internet to ensure maximum security.
+
+
+
 Step 6: Start the Elasticsearch Service
+
 Finally, enable and start the Elasticsearch service:
 
 ```
