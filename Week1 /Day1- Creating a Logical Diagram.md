@@ -14,3 +14,5 @@ The [Logical Diagram](https://github.com/shellwiz1337/SOC-Analyst-Challenge/blob
     OS Ticket Server
 
 These devices are connected within a network hosted on VULTR, with the SOC Analyst's laptop and attacker's laptop connected over the internet.
+
+Edit : Windows Server and Ubunt server will be out of VPC so we can let attackers to try to get access to these servers and couldn't pivot to our other servers. 
