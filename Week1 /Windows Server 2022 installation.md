@@ -1,0 +1,5 @@
+- Deploy new server (i used vultr)
+- Select windows server 22
+- Deselect any additional feature and select resular cloud compute with 2GB RAM.
+- No need to select fireall rules as this is the machine we want to get attacked by anyone on the internet. Setup the hostname and start deploying it. It may take a couple of time.
+- It is RDP enabled. Let it get attacked !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
